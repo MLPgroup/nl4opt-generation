@@ -1,9 +1,9 @@
 # NL4Opt Subtask 2
 This repository contains the source code of "Named Entity-Based Enrichment with BART" for the second subtask of NL4Opt. Refer to [the NL4Opt page](https://nl4opt.github.io/) for details about the subtask.
 
-This repository is based on the baseline code for the second subtask which can be found at [the NL4Opt's official implementation](https://github.com/nl4opt/nl4opt-subtask2-baseline). Check their [README.md](https://github.com/nl4opt/nl4opt-subtask2-baseline/blob/main/README.md) for details.
+This repository is based on the baseline code for the second subtask, which can be found at [the NL4Opt's official implementation](https://github.com/nl4opt/nl4opt-subtask2-baseline). Check their [README.md](https://github.com/nl4opt/nl4opt-subtask2-baseline/blob/main/README.md) for details.
 # Environment Setup
-Use `environment.yml` to setup the environment:
+Use `environment.yml` to set up the environment:
 
 ```
 conda env create -f environment.yml -n <ENV_NAME>
@@ -43,6 +43,19 @@ The important parameters in the training are:
 To evaluate the model, run the following:
 ```
 python test.py --gpu <gpu id> --checkpoint <checkpoint.mdl> --test-file <test.jsonl> --batch-size <test_batch_size> --beam-size <beam_size>
+```
+
+# Citation
+If you find our work relevant to your research, please consider citing it.
+```
+@inproceedings{gangwar2023highlighting,
+  title={Highlighting Named Entities in Input for Auto-Formulation of Optimization Problems},
+  author={Gangwar, Neeraj and Kani, Nickvash},
+  booktitle={International Conference on Intelligent Computer Mathematics},
+  pages={130--141},
+  year={2023},
+  organization={Springer}
+}
 ```
 
 # Contact
